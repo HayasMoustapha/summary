@@ -1,0 +1,211 @@
+@media (max-width: 375px) {
+  .container .card {
+    width: 350px !important;
+    height: 647px !important;
+  }
+  .container .card__image {
+    height: 230px !important;
+  }
+  .container .card__annualPlan {
+    margin: 0 13px !important;
+  }
+  .container .card__annualPlan--offer {
+    right: 21px !important;
+  }
+  .container .card__button--validation {
+    margin: 20px 5% 10px 5% !important;
+  }
+  .container .card__button--cancel {
+    margin: 20px auto !important;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 470px) {
+  .container .card {
+    width: 350px !important;
+  }
+  .container .card__image {
+    background-size: cover !important;
+  }
+  .container .card__summary {
+    margin: 10px 7% !important;
+  }
+  .container .card__annualPlan {
+    margin: 20px 5% !important;
+  }
+  .container .card__annualPlan--offer {
+    right: 15px !important;
+  }
+  .container .card__button {
+    margin: 0 5% !important;
+  }
+  .container .card__button--cancel {
+    margin: 20px auto !important;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #e0e8ff;
+}
+
+.container .card {
+  width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 1px solid #f5f7ff;
+  border-radius: 10px;
+  background-color: #f5f7ff;
+  -webkit-box-shadow: 0px 15px 25px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 15px 25px 2px rgba(0, 0, 0, 0.2);
+}
+
+.container .card__image {
+  width: 100%;
+  height: 230px;
+  background-image: url("../../images/illustration-hero.svg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.container .card__summary {
+  text-align: center;
+  margin: 20px 11%;
+}
+
+.container .card__summary h2 {
+  color: #1f2f56;
+  text-shadow: 1px 1px 1px #7280a7;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+
+.container .card__summary p {
+  margin: 0 auto;
+  width: 300px;
+  text-align: center;
+  color: #7280a7;
+  line-height: 30px;
+}
+
+.container .card__annualPlan {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 11%;
+  padding: 15px 15px;
+  background-color: rgba(0, 0, 0, 0.001);
+  border: 0px solid #e0e8ff;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 5px #e0e8ff;
+          box-shadow: 1px 1px 5px #e0e8ff;
+}
+
+.container .card__annualPlan img {
+  width: 60px;
+  height: 60px;
+}
+
+.container .card__annualPlan--offer {
+  position: relative;
+  right: 32px;
+}
+
+.container .card__annualPlan--offer h3 {
+  color: #1f2f56;
+  text-shadow: 0.5px 0.5px 0.5px #7280a7;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.container .card__annualPlan--offer p {
+  color: #7280a7;
+}
+
+.container .card__annualPlan a {
+  color: #3829e0;
+}
+
+.container .card__annualPlan a:hover {
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #7280a7;
+}
+
+.container .card__button {
+  margin: 15px 11%;
+  font-weight: 700;
+  outline: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.container .card__button--validation {
+  padding: 20px;
+  color: #e0e8ff;
+  background-color: #3829e0;
+  border: 1px solid #3829e0;
+  -webkit-box-shadow: 0 10px 20px 2.5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 20px 2.5px rgba(0, 0, 0, 0.2);
+}
+
+.container .card__button--validation:hover {
+  background-color: #6456f5;
+  -webkit-box-shadow: 0 10px 25px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 25px 3px rgba(0, 0, 0, 0.2);
+}
+
+.container .card__button--cancel {
+  background-color: #f5f7ff;
+  color: #1f2f56;
+  border: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 20px auto 45px;
+}
+
+.container .card__button--cancel:hover {
+  text-shadow: 1px 1px 1px #7280a7;
+}
+/*# sourceMappingURL=main.css.map */
