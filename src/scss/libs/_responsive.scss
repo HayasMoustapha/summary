@@ -1,59 +1,54 @@
-@media (max-width: 375px)
+@media only screen and (max-width:425px)
 {
   .container
   {
     .card
     {
-      width: 350px!important;
-      height: 647px!important;
+      width: 85%!important;
+      height: 90%!important;
       &__image
       {
-        height: 230px!important;
-      }
-      &__annualPlan
-      {
-        margin: 0 13px!important;
-        &--offer
-        {
-          right: 21px!important;
-        }
-      }
-      &__button
-      {
-        &--validation
-        {
-          margin: 20px 5% 10px 5%!important;
-        }
-        &--cancel
-        {
-          margin: 20px auto!important;
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: 376px) and (max-width:470px)
-{
-  .container
-  {
-    .card
-    {
-      width:350px!important;
-      &__image
-      {
+        height: 30%!important;
         background-size: cover!important;
       }
       &__summary
       {
-          margin: 10px 7%!important;
+        margin: 0 5%!important;
+        h2
+        {
+          margin-top: 0!important;
+          margin-bottom: 6%!important;
+          font-size: 1.7rem!important;
+        }
+        p
+        {
+          width: auto!important;
+        }
       }
       &__annualPlan
       {
         margin: 20px 5%!important;
         &--offer
         {
-          right: 15px!important;
+          position: initial!important;
+          h3
+          {
+            margin-bottom: 2%!important;
+            font-size: 0.9rem!important;
+          }
+          p
+          {
+            font-size: 0.9rem!important;
+          }
+        }
+        a
+        {
+          font-size: 0.9rem!important;
+        }
+        img
+        {
+          width: 20%!important;
+          height: 80%!important;
         }
       }
       &__button
@@ -62,6 +57,13 @@
         &--cancel
         {
           margin: 20px auto!important;
+          position: relative;
+          bottom: 2%;
+        }
+        &--validation
+        {
+          padding: 8%!important;
+         
         }
       }
     }
